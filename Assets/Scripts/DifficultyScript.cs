@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class DifficultyScript : MonoBehaviour
 {
@@ -25,7 +26,7 @@ public class DifficultyScript : MonoBehaviour
     
     void ResetMaze()
     {
-        
+        SceneManager.LoadScene(0);
 
     }
     void ResetLevelfunction()
