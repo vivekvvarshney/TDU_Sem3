@@ -10,6 +10,7 @@ public class DifficultyScript : MonoBehaviour
     public Button ResetLevel;
     public Button ExitButton;
     public GameObject MazePrefab;
+    public Text DebugData;
     // Start is called before the first frame update
     void Start()
     {
