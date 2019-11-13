@@ -1055,8 +1055,10 @@ MonoBehaviour:
   ExitButton: {fileID: 586378739}
   MazePrefab: {fileID: 7843522976487093585, guid: 4c439fae6a8eddb4a8ddd2f3cfc28c3f,
     type: 3}
+  BallPrefab: {fileID: 130820, guid: 6414ea9cfa2ccc24a95c775ffa926968, type: 3}
   DebugData: {fileID: 1597473210}
-  difficultyLevel: 0
+  baseDifficultyLevel: 0
+  newDifficultyLevel: 0
   gameStartTime: 0
   gameEndTime: 0
   levelStartTime: 0
@@ -1154,6 +1156,7 @@ GameObject:
   - component: {fileID: 1895491381}
   - component: {fileID: 1895491380}
   - component: {fileID: 1895491379}
+  - component: {fileID: 1895491382}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1245,6 +1248,20 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &1895491382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1895491377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4af2353f945c5bf42b1a0f5553cd9dc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ResetLevel: {fileID: 651579786}
+  GObject: {fileID: 92744320221836936, guid: 6cf3e11be6956cf4db9185a8c327d833, type: 3}
 --- !u!1 &1988816025
 GameObject:
   m_ObjectHideFlags: 0
