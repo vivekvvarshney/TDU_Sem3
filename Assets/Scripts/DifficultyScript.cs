@@ -10,7 +10,7 @@ public class DifficultyScript : MonoBehaviour
     public Button ResetLevel;
     public Button ExitButton;
     public GameObject MazePrefab;
-    public GameObject BallPrefab;
+    public GameObject Ball;
     public Text DebugData;
     public int baseDifficultyLevel;
     public int newDifficultyLevel;
@@ -72,7 +72,7 @@ public class DifficultyScript : MonoBehaviour
     {
         ++tryCounter;
         Destroy(GameObject.FindGameObjectWithTag("Maze"));
-        Destroy(GameObject.FindGameObjectWithTag("Ball"));
+        //Destroy(GameObject.FindGameObjectWithTag("Ball"));
         if (GameObject.FindGameObjectsWithTag("Maze").Length>1)
         {
             Destroy(GameObject.FindGameObjectWithTag("Maze"));
@@ -81,10 +81,11 @@ public class DifficultyScript : MonoBehaviour
         else
         {
             Instantiate(MazePrefab);
-            Instantiate(BallPrefab);
+            //Instantiate(BallPrefab);
             Debug.Log("after instance,Number of mazes: " + GameObject.FindGameObjectsWithTag("Maze").Length);
             
         }
+        Ball.transform.SetPositionAndRotation(new Vector3(0f, 1f, 0), (new Quaternion(0,0,0,0)));
         
         
     }

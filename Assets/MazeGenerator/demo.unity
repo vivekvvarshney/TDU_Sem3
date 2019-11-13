@@ -238,6 +238,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 281829622}
   m_CullTransparentMesh: 0
+--- !u!1 &429481903 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 130820, guid: 6414ea9cfa2ccc24a95c775ffa926968,
+    type: 3}
+  m_PrefabInstance: {fileID: 802817133}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &586378737
 GameObject:
   m_ObjectHideFlags: 0
@@ -1055,7 +1061,7 @@ MonoBehaviour:
   ExitButton: {fileID: 586378739}
   MazePrefab: {fileID: 7843522976487093585, guid: 4c439fae6a8eddb4a8ddd2f3cfc28c3f,
     type: 3}
-  BallPrefab: {fileID: 130820, guid: 6414ea9cfa2ccc24a95c775ffa926968, type: 3}
+  Ball: {fileID: 429481903}
   DebugData: {fileID: 1597473210}
   baseDifficultyLevel: 0
   newDifficultyLevel: 0

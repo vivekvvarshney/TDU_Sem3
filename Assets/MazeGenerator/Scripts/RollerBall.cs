@@ -19,7 +19,8 @@ public class RollerBall : MonoBehaviour {
 	void Start () {
 		mRigidBody = GetComponent<Rigidbody> ();
 		mAudioSource = GetComponent<AudioSource> ();
-	}
+        ViewCamera = Camera.main.gameObject;
+    }
 
 	void FixedUpdate () {
 		if (mRigidBody != null) {
@@ -47,6 +48,10 @@ public class RollerBall : MonoBehaviour {
 			}
 			ViewCamera.transform.LookAt(transform.position);
 		}
+        //if (ViewCamera==null)
+        //{
+            
+        //}
 	}
 
 	void OnCollisionEnter(Collision coll){
